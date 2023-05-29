@@ -49,7 +49,7 @@
         </div>
         <div class="section-table two">
             <h2>BẢNG TRẠNG THÁI SAU KHI RÚT GỌN</h2>
-            <div class="sum-state">TỔNG SỐ LƯỢNG TRẠNG THÁI: {{len_li_PS_Minimize}}</div>
+            <div class="sum-state">TỔNG SỐ LƯỢNG TRẠNG THÁI: {{len_DataAfter}}</div>
             <div class="container">
                     <table >
                             <tr>
@@ -65,11 +65,11 @@
                             </tr>
                                 {% for key in li_LenMiniMize %}
                                 <tr>
-                                    <td>{{li_PS_Minimize[key] }}</td>
-                                    <td>{{li_NS0_Minimize[key] }}</td>
-                                    <td>{{li_NS1_Minimize[key] }}</td>
-                                    <td>{{li_Output0_Minimize[key] }}</td>
-                                    <td>{{li_Output1_Minimize[key]}}</td>
+                                    <td>{{dataAfter["PS"][key] }}</td>
+                                    <td>{{dataAfter["NS0"][key] }}</td>
+                                    <td>{{dataAfter["NS1"][key] }}</td>
+                                    <td>{{dataAfter["O0"][key] }}</td>
+                                    <td>{{dataAfter["O1"][key]}}</td>
                                 </tr>
                                     {% endfor %}
                     </table>

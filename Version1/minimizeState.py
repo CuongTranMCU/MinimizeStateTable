@@ -4,7 +4,7 @@ from flask import Flask,render_template
 import time
 start_time = time.time()
 app=Flask(__name__)
-data=pd.read_excel( r'Testcase/autoTest11.xlsx') # read file by pandas : data is Dataframe
+data=pd.read_excel( r'Testcase/autoTest1.xlsx') # read file by pandas : data is Dataframe
 data.dropna(inplace=True)          # remove  any rows in Dataframe contains NaN values
 # rename colums in DataFrame to new short name
 data.rename( columns={'PRESENT STATE':'PS' }, inplace=True )
@@ -183,7 +183,7 @@ print("Thời gian chạy: ", total_time, " giây")
 # Using Flask to return template to file index.html
 @app.route('/')
 def index():
-    return render_template("index2.html",dataAfter=dataAfter,len_DataAfter=len_DataAfter,data=data,len_Data=len_Data,li_LenMiniMize=li_LenMiniMize,li_LenData=li_LenData )
+    return render_template("index.html",dataAfter=dataAfter,len_DataAfter=len_DataAfter,data=data,len_Data=len_Data,li_LenMiniMize=li_LenMiniMize,li_LenData=li_LenData )
 if __name__ == '__main__':
     app.run(debug=True)       
 
