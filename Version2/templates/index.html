@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/styles.css">
+        
+        <title>Minimize States</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 logo">
+                        <a href="#">
+                            <img src="/static/images/MINIMIZE STATES.svg" alt="Logo">
+                        </a>  
+                    </div>
+        
+                    
+                    <div class="col-6 title" >FSM Minimize States</div>
+                </div>
+            </div>
+        </header>
+
+        
+
+        <div class="two-table">
+            <div>
+                <h3>Trước khi rút gọn</h3>
+                <table class="stateTable before">
+                    <thead>
+                        <tr>
+                            <!-- <th class="header" rowspan="2">NUMBER OF STATES</th> -->
+                            <th class="header" rowspan="2">PRESENT STATE</th>
+                            <th class="header" colspan="2">NEXT STATE</th>
+                            <th class="header" colspan="2">OUTPUT</th>
+                        </tr>
+            
+                        <tr>
+                            <th>X=0</th>
+                            <th>X=1</th>
+                            <th>X=0</th>
+                            <th>X=1</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        {% for temp in before %}
+                        <tr>
+                            <!-- <td>{{index}}</td> -->
+                            <td>{{temp[0]}}</td>
+                            <td>{{temp[1]}}</td>
+                            <td>{{temp[2]}}</td>
+                            <td>{{temp[3][0]}}</td>
+                            <td>{{temp[3][2]}}</td>
+                        </tr>
+                        {% endfor %}
+                    
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>SỐ TRẠNG THÁI</td>
+                            <td colspan="4">{{lenBefore}}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p class="time">Execution Time: {{executionTime}}</p>
+            </div>
+
+
+            
+            <div>
+                <h3>Sau khi rút gọn</h3>
+                <table class="stateTable before">
+                    <thead>
+                        <tr>
+                            <!-- <th class="header" rowspan="2">NUMBER OF STATES</th> -->
+                            <th class="header" rowspan="2">PRESENT STATE</th>
+                            <th class="header" colspan="2">NEXT STATE</th>
+                            <th class="header" colspan="2">OUTPUT</th>
+                        </tr>
+            
+                        <tr>
+                            <th>X=0</th>
+                            <th>X=1</th>
+                            <th>X=0</th>
+                            <th>X=1</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        {% for temp in after %}
+                        <tr>
+                            <!-- <td>{{index}}</td> -->
+                            <td>{{temp[0]}}</td>
+                            <td>{{temp[1]}}</td>
+                            <td>{{temp[2]}}</td>
+                            <td>{{temp[3][0]}}</td>
+                            <td>{{temp[3][2]}}</td>
+                        </tr>
+                        {% endfor %}
+                    
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>SỐ TRẠNG THÁI</td>
+                            <td colspan="4">{{lenAfter}}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            
+        </div>
+
+        
+
+    </body> 
+</html>
