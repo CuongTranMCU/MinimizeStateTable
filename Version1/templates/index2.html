@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Minimize Status Table</title>
+</head>
+<body>
+    <div class="header">
+        <div class="inner-wrap">
+        <a href="#" class="inner-image">
+            <img src="/static/images/minimize.webp" alt="logo">
+        </a>
+        <a href="#" class="inner-title">Minimize State Table</a>
+    </div>                                                                                          
+    </div>
+   
+    <div class="two-table">
+        <div class="section-table one">
+            <h2>BẢNG TRẠNG THÁI BAN ĐẦU</h2>
+            <div class="sum-state">TỔNG SỐ LƯỢNG TRẠNG THÁI: {{len_Data}}</div>
+            <div class="container">
+                    <table >
+                            <tr>
+                            <th rowspan="2">Present State</th>
+                            <th colspan="2">Next State</th>
+                            <th colspan="2">Output </th>
+                            </tr>
+                            <tr>
+                                <th>X=0</th>
+                                <th>X=1</th>
+                                <th>X=0</th>
+                                <th>X=1</th>
+                            </tr>
+                                {% for key in li_LenData %}
+                                <tr>
+                                    <td>{{data["PS"][key] }}</td>
+                                    <td>{{data["NS0"][key] }}</td>
+                                    <td>{{data["NS1"][key] }}</td>
+                                    <td>{{data["O0"][key] }}</td>
+                                    <td>{{data["O1"][key]}}</td>
+                                </tr>
+                                    {% endfor %}
+                    </table>
+            </div>
+        </div>
+        <div class="section-table two">
+            <h2>BẢNG TRẠNG THÁI SAU KHI RÚT GỌN</h2>
+            <div class="sum-state">TỔNG SỐ LƯỢNG TRẠNG THÁI: {{len_DataAfter}}</div>
+            <div class="container">
+                    <table >
+                            <tr>
+                            <th rowspan="2">Present State</th>
+                            <th colspan="2">Next State</th>
+                            <th colspan="2">Output </th>
+                            </tr>
+                            <tr>
+                                <th>X=0</th>
+                                <th>X=1</th>
+                                <th>X=0</th>
+                                <th>X=1</th>
+                            </tr>
+                                {% for key in li_LenMiniMize %}
+                                <tr>
+                                    <td>{{dataAfter["PS"][key] }}</td>
+                                    <td>{{dataAfter["NS0"][key] }}</td>
+                                    <td>{{dataAfter["NS1"][key] }}</td>
+                                    <td>{{dataAfter["O0"][key] }}</td>
+                                    <td>{{dataAfter["O1"][key]}}</td>
+                                </tr>
+                                    {% endfor %}
+                    </table>
+            </div>
+        </div>
+    </div>
+   
+    <!-- <hr> -->
+    
+    
+</body>
+</html>
