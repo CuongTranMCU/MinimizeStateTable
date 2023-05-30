@@ -13,7 +13,7 @@
 - Cấu trúc Dự án: 
      + File chương trình chính là file .py
      + Folder static: chứa file styles.css
-     + Folder templates: chưa file index.html
+     + Folder templates: chứa file index.html
 3. CÁCH CHẠY THỬ DỰ ÁN:
 + Đầu tiên, chạy chương trình bằng cách Run file .py.
 + Khi thực thi chương trình sẽ xuất ra 1 link localhost.
