@@ -3,7 +3,7 @@
 - Ban đầu, chúng ta sẽ sử dụng ngôn ngữ lập trình Python và thư viện Pandas để thu thập data của bảng trạng thái cần rút gọn từ file excel.
 - Sau đó, thực hiện rút gọn trạng thái dựa trên data đã thu thập.
 - Cuối cùng, lấy data sau khi rút gọn hiển thị lên web browser bằng cách sử dụng HTML, CSS và framework Flask.
-- Hình ảnh mình họa:
+- Hình ảnh mình họa Version1: 
   ![image](https://github.com/CuongTranMCU/MinimizeStateTable/assets/114637328/ef2597c9-27e6-4b18-9348-f14130371979)
 2. CÁCH CÀI ĐẶT VÀ CHẠY DỰ ÁN
 a. Cách cài đặt:
