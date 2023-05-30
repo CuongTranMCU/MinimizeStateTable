@@ -20,6 +20,5 @@ b. Cách chạy dự án
 - Trần Văn Cường MSSV: 21521909 
 - Trần Anh Tuấn  MSSV: 21522764
 4. THÔNG TIN LIÊN HỆ:
-- Gmail:
  +  21521909@gm.uit.edu.vn
  +  21522764@gm.uit.edu.vn
