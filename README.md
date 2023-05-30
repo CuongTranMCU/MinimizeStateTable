@@ -6,16 +6,16 @@
 - Hình ảnh mình họa Version1: 
   ![image](https://github.com/CuongTranMCU/MinimizeStateTable/assets/114637328/ef2597c9-27e6-4b18-9348-f14130371979)
 2. CÁCH CÀI ĐẶT VÀ CHẠY DỰ ÁN
- a. Cách cài đặt:
-   - Cài đặt ngôn ngữ python, thư viện Flask, pandas(Version1), openyxl(Version2) và gồm những file excel để chương trình đọc dữ liệu
-   - Cấu trúc Dự án: 
+   a. Cách cài đặt:
+    - Cài đặt ngôn ngữ python, thư viện Flask, pandas(Version1), openyxl(Version2) và gồm những file excel để chương trình đọc dữ liệu
+    - Cấu trúc Dự án: 
      + File chương trình chính là file .py
      + Folder static: chứa file styles.css
      + Folder templates: chưa file index.html
- b. Cách chạy dự án
-   + Đầu tiên, chạy chương trình bằng cách Run file .py
-   + Khi thực thi chương trình sẽ xuất ra 1 link localhost.
-   + Click vào link thì kết quả sẽ được hiển thị lên browser.
+   b. Cách chạy dự án
+     + Đầu tiên, chạy chương trình bằng cách Run file .py
+     + Khi thực thi chương trình sẽ xuất ra 1 link localhost.
+     + Click vào link thì kết quả sẽ được hiển thị lên browser.
 3. THÀNH VIÊN:
 - Trần Văn Cường MSSV: 21521909 
 - Trần Anh Tuấn  MSSV: 21522764
