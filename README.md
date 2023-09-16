@@ -6,7 +6,7 @@
 - Hình ảnh minh họa Version1: 
   ![image](https://raw.githubusercontent.com/CuongTranMCU/MinimizeStateTable/master/241974625-ef2597c9-27e6-4b18-9348-f14130371979.png)
 - Hình ảnh minh họa Version2:
-  ![image](https://github.com/CuongTranMCU/MinimizeStateTable/assets/89649508/efee68bf-8c67-475b-85ea-212990733647)
+  ![image](https://raw.githubusercontent.com/CuongTranMCU/MinimizeStateTable/master/241994346-efee68bf-8c67-475b-85ea-212990733647.png)
 
 2. CÁCH CÀI ĐẶT:
 - Cài đặt ngôn ngữ Python, thư viện Flask, Pandas(Version1), Openpyxl(Version2) và các file testcase Excel để chương trình đọc dữ liệu
