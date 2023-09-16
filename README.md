@@ -4,7 +4,7 @@
 - Sau đó, thực hiện rút gọn trạng thái dựa trên data đã thu thập.
 - Cuối cùng, lấy data sau khi rút gọn hiển thị lên web browser bằng cách sử dụng HTML, CSS và framework Flask.
 - Hình ảnh minh họa Version1: 
-  ![image](https://github.com/CuongTranMCU/MinimizeStateTable/assets/114637328/ef2597c9-27e6-4b18-9348-f14130371979)
+  ![image](https://raw.githubusercontent.com/CuongTranMCU/MinimizeStateTable/master/241974625-ef2597c9-27e6-4b18-9348-f14130371979.png)
 - Hình ảnh minh họa Version2:
   ![image](https://github.com/CuongTranMCU/MinimizeStateTable/assets/89649508/efee68bf-8c67-475b-85ea-212990733647)
 
